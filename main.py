@@ -51,7 +51,7 @@ def main():
         try:
             warp_unlimited(code_id, url)
             print ("[+] Success ! You Got 1GB Warp + \n" + "[-] Please Wait 10 Second !")
-            time.sleep(17)
+            time.sleep(10)
             
         except KeyboardInterrupt:
             print ("Stopped ! ")
