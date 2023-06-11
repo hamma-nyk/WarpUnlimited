@@ -46,15 +46,15 @@ def main():
     #code_id = input("[+] Please Enter Your Client ID : ")
     code_id = "e787b50a-5727-4a4c-b908-b089b42512be"
 
-    print(f"Getting warp...\nYour ID : {code_id}\n{'-'*20}")
+    print(f"Getting warp...\nYour ID : {code_id}\n{'-'*40}")
     while True:
         try:
             warp_unlimited(code_id, url)
-            print ("[+] Success ! You Got 1GB Warp + \n" + "[-] Please Wait 10 Second !")
+            print ("[+] Success ! You Got 1GB Warp+ \n" + "[-] Please Wait 10 Second !")
             time.sleep(10)
             
         except KeyboardInterrupt:
-            print ("Stopped ! ")
+            print ("[x] Stopped ! ")
 
 if __name__ == "__main__":
     main()
