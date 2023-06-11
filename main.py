@@ -16,7 +16,7 @@ def rand_string(number):
     result= ''.join(random.choice(text) for char in range(number))
     return result
 
-def warp_unlimited(id_code):
+def warp_unlimited(id_code, url):
     inst = rand_string(22)
     body = {
         "key": f"{rand_string(43)}=",
@@ -49,7 +49,7 @@ def main():
     print(f"Getting warp...\nYour ID : {code_id}\n{'-'*20}")
     while True:
         try:
-            warp_unlimited(code_id)
+            warp_unlimited(code_id, url)
             print ("[+] Success ! You Got 1GB Warp + \n" + "[-] Please Wait 10 Second !")
             time.sleep(17)
             
